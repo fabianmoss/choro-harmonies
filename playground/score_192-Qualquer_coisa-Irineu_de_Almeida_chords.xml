@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Posaune</part-name>
       <part-abbreviation>Pos.</part-abbreviation>
-      <score-instrument id="Iac7973bcfc2ae55368c6595606428264">
+      <score-instrument id="I6c3dad3a44dc903525c3718f354389c7">
         <instrument-name>Posaune</instrument-name>
       </score-instrument>
-      <midi-instrument id="Iac7973bcfc2ae55368c6595606428264">
+      <midi-instrument id="I6c3dad3a44dc903525c3718f354389c7">
         <midi-channel>1</midi-channel>
         <midi-program>58</midi-program>
       </midi-instrument>

@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Flöte</part-name>
       <part-abbreviation>Fl.</part-abbreviation>
-      <score-instrument id="Idd726fa8e7d48cfbbc9b909cbeb77023">
+      <score-instrument id="I64a8965c0b62f7f54ba4be76521de61c">
         <instrument-name>Flöte</instrument-name>
       </score-instrument>
-      <midi-instrument id="Idd726fa8e7d48cfbbc9b909cbeb77023">
+      <midi-instrument id="I64a8965c0b62f7f54ba4be76521de61c">
         <midi-channel>1</midi-channel>
         <midi-program>74</midi-program>
       </midi-instrument>
