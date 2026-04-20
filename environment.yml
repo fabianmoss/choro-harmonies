@@ -1,4 +1,4 @@
-name: harmony # my env + dependencies i had to install
+name: harmony # add dependencies
 channels:
   - defaults
 dependencies:
