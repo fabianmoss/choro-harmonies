@@ -1,4 +1,4 @@
-name: harmony # add dependencies
+name: harmony
 channels:
   - defaults
 dependencies:
