@@ -354,7 +354,7 @@ class SimpleChordSequenceModel(ChordSequenceModel):
 
         relu1 = F.relu(lstm_out)
         drop1 = self.dropout1(relu1)
-        fc1 = self.fc1(drop1)
+        fc1 = self.fc1(drop1) # fc = dense layer?
         relu2 = F.relu(fc1)
         output = self.fc2(relu2)
 
