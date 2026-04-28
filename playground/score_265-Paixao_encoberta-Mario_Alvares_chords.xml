@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Mário Álvares da Conceição</creator>
     <encoding>
-      <encoding-date>2026-04-14</encoding-date>
+      <encoding-date>2026-04-27</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
     </encoding>
@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Flöte</part-name>
       <part-abbreviation>Fl.</part-abbreviation>
-      <score-instrument id="I64a8965c0b62f7f54ba4be76521de61c">
+      <score-instrument id="I1406eb3bbc6737ca743a17305b2feda0">
         <instrument-name>Flöte</instrument-name>
       </score-instrument>
-      <midi-instrument id="I64a8965c0b62f7f54ba4be76521de61c">
+      <midi-instrument id="I1406eb3bbc6737ca743a17305b2feda0">
         <midi-channel>1</midi-channel>
         <midi-program>74</midi-program>
       </midi-instrument>
@@ -189,6 +189,22 @@
     </measure>
     <!--========================= Measure 4 ==========================-->
     <measure number="4">
+      <harmony>
+        <root>
+          <root-step>D</root-step>
+        </root>
+        <kind />
+        <degree>
+          <degree-value>7</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+        <degree>
+          <degree-value>6</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+      </harmony>
       <note>
         <pitch>
           <step>B</step>
@@ -276,10 +292,6 @@
           <root-step>G</root-step>
         </root>
         <kind>dominant</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>C</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -398,6 +410,13 @@
     </measure>
     <!--========================= Measure 9 ==========================-->
     <measure number="9">
+      <harmony>
+        <root>
+          <root-step>E</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major</kind>
+      </harmony>
       <note>
         <pitch>
           <step>C</step>
@@ -897,6 +916,22 @@
     </measure>
     <!--========================= Measure 20 =========================-->
     <measure number="20">
+      <harmony>
+        <root>
+          <root-step>D</root-step>
+        </root>
+        <kind />
+        <degree>
+          <degree-value>7</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+        <degree>
+          <degree-value>6</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+      </harmony>
       <note>
         <pitch>
           <step>B</step>
@@ -957,6 +992,16 @@
     </measure>
     <!--========================= Measure 21 =========================-->
     <measure number="21">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+        </root>
+        <kind>diminished-seventh</kind>
+        <inversion>2</inversion>
+        <bass>
+          <bass-step>F</bass-step>
+        </bass>
+      </harmony>
       <note>
         <pitch>
           <step>A</step>
@@ -976,6 +1021,17 @@
     </measure>
     <!--========================= Measure 22 =========================-->
     <measure number="22">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>suspended-second</kind>
+        <degree>
+          <degree-value>7</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+      </harmony>
       <note>
         <pitch>
           <step>A</step>
@@ -1072,10 +1128,6 @@
           <root-step>C</root-step>
         </root>
         <kind>minor</kind>
-        <inversion>2</inversion>
-        <bass>
-          <bass-step>G</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -1128,6 +1180,21 @@
     </measure>
     <!--========================= Measure 26 =========================-->
     <measure number="26">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+        </root>
+        <kind>suspended-second</kind>
+        <inversion>2</inversion>
+        <bass>
+          <bass-step>C</bass-step>
+        </bass>
+        <degree>
+          <degree-value>7</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+      </harmony>
       <note>
         <pitch>
           <step>G</step>
@@ -1179,21 +1246,11 @@
         <root>
           <root-step>F</root-step>
         </root>
-        <kind />
-        <inversion>5</inversion>
+        <kind>dominant</kind>
+        <inversion>2</inversion>
         <bass>
-          <bass-step>B</bass-step>
+          <bass-step>C</bass-step>
         </bass>
-        <degree>
-          <degree-value>4</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>3</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
       </harmony>
       <note>
         <pitch>
@@ -1225,13 +1282,13 @@
       <harmony>
         <root>
           <root-step>E</root-step>
+          <root-alter>-1</root-alter>
         </root>
         <kind>major</kind>
-        <degree>
-          <degree-value>6</degree-value>
-          <degree-alter>-1</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>G</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -1631,6 +1688,13 @@
     </measure>
     <!--========================= Measure 36 =========================-->
     <measure number="36">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major</kind>
+      </harmony>
       <note>
         <pitch>
           <step>F</step>
@@ -1849,6 +1913,13 @@
     </measure>
     <!--========================= Measure 40 =========================-->
     <measure number="40">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>suspended-second</kind>
+      </harmony>
       <note>
         <pitch>
           <step>C</step>
@@ -1859,6 +1930,13 @@
         <stem>down</stem>
         <beam number="1">begin</beam>
       </note>
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major</kind>
+      </harmony>
       <note>
         <pitch>
           <step>B</step>
@@ -2011,6 +2089,13 @@
     </measure>
     <!--========================= Measure 43 =========================-->
     <measure number="43">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major</kind>
+      </harmony>
       <note>
         <pitch>
           <step>F</step>
@@ -2028,6 +2113,17 @@
     </measure>
     <!--========================= Measure 44 =========================-->
     <measure number="44">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+        </root>
+        <kind>minor-seventh</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>B</bass-step>
+          <bass-alter>-1</bass-alter>
+        </bass>
+      </harmony>
       <note>
         <pitch>
           <step>F</step>
@@ -2098,6 +2194,12 @@
     </measure>
     <!--========================= Measure 45 =========================-->
     <measure number="45">
+      <harmony>
+        <root>
+          <root-step>A</root-step>
+        </root>
+        <kind>suspended-second</kind>
+      </harmony>
       <note>
         <pitch>
           <step>B</step>
@@ -2166,6 +2268,22 @@
     </measure>
     <!--========================= Measure 46 =========================-->
     <measure number="46">
+      <harmony>
+        <root>
+          <root-step>A</root-step>
+        </root>
+        <kind />
+        <degree>
+          <degree-value>7</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+        <degree>
+          <degree-value>6</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+      </harmony>
       <note>
         <pitch>
           <step>F</step>
@@ -2176,6 +2294,17 @@
         <stem>down</stem>
         <beam number="1">begin</beam>
       </note>
+      <harmony>
+        <root>
+          <root-step>A</root-step>
+        </root>
+        <kind>dominant</kind>
+        <degree>
+          <degree-value>-5</degree-value>
+          <degree-alter>0</degree-alter>
+          <degree-type>add</degree-type>
+        </degree>
+      </harmony>
       <note>
         <pitch>
           <step>E</step>
@@ -2242,10 +2371,6 @@
           <root-step>D</root-step>
         </root>
         <kind>minor</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>G</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2478,13 +2603,13 @@
       <harmony>
         <root>
           <root-step>B</root-step>
+          <root-alter>-1</root-alter>
         </root>
         <kind>major</kind>
-        <degree>
-          <degree-value>6</degree-value>
-          <degree-alter>-1</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>D</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2504,6 +2629,13 @@
     </measure>
     <!--========================= Measure 52 =========================-->
     <measure number="52">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major</kind>
+      </harmony>
       <note>
         <pitch>
           <step>F</step>
@@ -2577,6 +2709,17 @@
     </measure>
     <!--========================= Measure 53 =========================-->
     <measure number="53">
+      <harmony>
+        <root>
+          <root-step>G</root-step>
+          <root-alter>1</root-alter>
+        </root>
+        <kind>diminished</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>B</bass-step>
+        </bass>
+      </harmony>
       <note>
         <pitch>
           <step>G</step>
@@ -2664,10 +2807,6 @@
           <root-step>E</root-step>
         </root>
         <kind>diminished</kind>
-        <inversion>4</inversion>
-        <bass>
-          <bass-step>F</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2682,6 +2821,13 @@
     </measure>
     <!--========================= Measure 56 =========================-->
     <measure number="56">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major</kind>
+      </harmony>
       <note>
         <pitch>
           <step>F</step>
@@ -2707,6 +2853,13 @@
     </measure>
     <!--========================= Measure 57 =========================-->
     <measure number="57">
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major-sixth</kind>
+      </harmony>
       <note>
         <pitch>
           <step>A</step>
@@ -2735,10 +2888,6 @@
           <root-step>G</root-step>
         </root>
         <kind>dominant</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>C</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2812,7 +2961,12 @@
         <root>
           <root-step>C</root-step>
         </root>
-        <kind>minor-sixth</kind>
+        <kind>minor</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>E</bass-step>
+          <bass-alter>-1</bass-alter>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2908,6 +3062,13 @@
     </measure>
     <!--========================= Measure 61 =========================-->
     <measure number="61">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>major-sixth</kind>
+      </harmony>
       <note>
         <pitch>
           <step>G</step>
@@ -3043,6 +3204,13 @@
     </measure>
     <!--========================= Measure 63 =========================-->
     <measure number="63">
+      <harmony>
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+        </root>
+        <kind>suspended-second</kind>
+      </harmony>
       <note>
         <pitch>
           <step>C</step>
@@ -3059,13 +3227,13 @@
       <harmony>
         <root>
           <root-step>B</root-step>
+          <root-alter>-1</root-alter>
         </root>
         <kind>major</kind>
-        <degree>
-          <degree-value>6</degree-value>
-          <degree-alter>-1</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>D</bass-step>
+        </bass>
       </harmony>
       <direction>
         <direction-type>
@@ -3740,10 +3908,6 @@
           <root-alter>1</root-alter>
         </root>
         <kind>diminished-seventh</kind>
-        <inversion>4</inversion>
-        <bass>
-          <bass-step>D</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -4030,10 +4194,6 @@
           <root-step>F</root-step>
         </root>
         <kind>minor-seventh</kind>
-        <inversion>2</inversion>
-        <bass>
-          <bass-step>C</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -4240,6 +4400,18 @@
     </measure>
     <!--========================= Measure 89 =========================-->
     <measure number="89">
+      <harmony>
+        <root>
+          <root-step>C</root-step>
+          <root-alter>1</root-alter>
+        </root>
+        <kind>diminished-seventh</kind>
+        <inversion>3</inversion>
+        <bass>
+          <bass-step>B</bass-step>
+          <bass-alter>-1</bass-alter>
+        </bass>
+      </harmony>
       <note>
         <pitch>
           <step>G</step>
@@ -4313,10 +4485,6 @@
           <root-alter>1</root-alter>
         </root>
         <kind>diminished-seventh</kind>
-        <inversion>4</inversion>
-        <bass>
-          <bass-step>D</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -4414,10 +4582,6 @@
           <root-step>E</root-step>
         </root>
         <kind>dominant</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>A</bass-step>
-        </bass>
       </harmony>
       <note>
         <rest />
@@ -4485,10 +4649,6 @@
           <root-step>A</root-step>
         </root>
         <kind>dominant</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>D</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -4555,6 +4715,12 @@
     </measure>
     <!--========================= Measure 94 =========================-->
     <measure number="94">
+      <harmony>
+        <root>
+          <root-step>D</root-step>
+        </root>
+        <kind>suspended-fourth-seventh</kind>
+      </harmony>
       <note>
         <pitch>
           <step>G</step>

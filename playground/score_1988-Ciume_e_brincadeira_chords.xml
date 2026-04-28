@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Santos Bocot</creator>
     <encoding>
-      <encoding-date>2026-04-14</encoding-date>
+      <encoding-date>2026-04-27</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
     </encoding>
@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Klavier</part-name>
       <part-abbreviation>Klav.</part-abbreviation>
-      <score-instrument id="I297fb53d1878c8915f77ec838164b497">
+      <score-instrument id="I43234ff3b81552c54f891356b5d16a89">
         <instrument-name>Klavier</instrument-name>
       </score-instrument>
-      <midi-instrument id="I297fb53d1878c8915f77ec838164b497">
+      <midi-instrument id="I43234ff3b81552c54f891356b5d16a89">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
@@ -54,7 +54,11 @@
         <root>
           <root-step>B</root-step>
         </root>
-        <kind>minor-sixth</kind>
+        <kind>minor</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>D</bass-step>
+        </bass>
       </harmony>
       <note>
         <rest />
@@ -204,6 +208,17 @@
     </measure>
     <!--========================= Measure 2 ==========================-->
     <measure number="2">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+          <root-alter>1</root-alter>
+        </root>
+        <kind>diminished</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>A</bass-step>
+        </bass>
+      </harmony>
       <note>
         <pitch>
           <step>C</step>
@@ -559,10 +574,6 @@
           <root-alter>1</root-alter>
         </root>
         <kind>major</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>B</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -784,12 +795,11 @@
         <root>
           <root-step>D</root-step>
         </root>
-        <kind />
-        <degree>
-          <degree-value>2</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <kind>dominant</kind>
+        <inversion>3</inversion>
+        <bass>
+          <bass-step>C</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -886,7 +896,11 @@
         <root>
           <root-step>G</root-step>
         </root>
-        <kind>major-sixth</kind>
+        <kind>major</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>B</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -935,6 +949,17 @@
     </measure>
     <!--========================= Measure 10 =========================-->
     <measure number="10">
+      <harmony>
+        <root>
+          <root-step>F</root-step>
+          <root-alter>1</root-alter>
+        </root>
+        <kind>diminished</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>A</bass-step>
+        </bass>
+      </harmony>
       <note>
         <pitch>
           <step>C</step>
@@ -1217,10 +1242,6 @@
           <root-step>A</root-step>
         </root>
         <kind>major</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>D</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -1422,21 +1443,12 @@
         <root>
           <root-step>E</root-step>
         </root>
-        <kind />
-        <inversion>5</inversion>
+        <kind>dominant</kind>
+        <inversion>1</inversion>
         <bass>
-          <bass-step>A</bass-step>
+          <bass-step>G</bass-step>
+          <bass-alter>1</bass-alter>
         </bass>
-        <degree>
-          <degree-value>6</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>5</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
       </harmony>
       <note>
         <pitch>
@@ -1546,10 +1558,6 @@
           <root-step>G</root-step>
         </root>
         <kind>major</kind>
-        <inversion>2</inversion>
-        <bass>
-          <bass-step>D</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -1685,10 +1693,6 @@
           <root-step>E</root-step>
         </root>
         <kind>major</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>A</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -1763,17 +1767,11 @@
         <root>
           <root-step>A</root-step>
         </root>
-        <kind />
-        <degree>
-          <degree-value>4</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>3</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <kind>dominant</kind>
+        <inversion>2</inversion>
+        <bass>
+          <bass-step>E</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2105,7 +2103,12 @@
         <root>
           <root-step>A</root-step>
         </root>
-        <kind>major-sixth</kind>
+        <kind>major</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>C</bass-step>
+          <bass-alter>1</bass-alter>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2211,21 +2214,12 @@
         <root>
           <root-step>B</root-step>
         </root>
-        <kind />
-        <inversion>5</inversion>
+        <kind>dominant</kind>
+        <inversion>2</inversion>
         <bass>
-          <bass-step>E</bass-step>
+          <bass-step>F</bass-step>
+          <bass-alter>1</bass-alter>
         </bass>
-        <degree>
-          <degree-value>4</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>3</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
       </harmony>
       <note>
         <pitch>
@@ -2271,10 +2265,6 @@
           <root-step>E</root-step>
         </root>
         <kind>major</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>A</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2349,17 +2339,11 @@
         <root>
           <root-step>A</root-step>
         </root>
-        <kind />
-        <degree>
-          <degree-value>4</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>3</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <kind>dominant</kind>
+        <inversion>2</inversion>
+        <bass>
+          <bass-step>E</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2555,7 +2539,12 @@
         <root>
           <root-step>D</root-step>
         </root>
-        <kind>major-sixth</kind>
+        <kind>major</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>F</bass-step>
+          <bass-alter>1</bass-alter>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -2998,17 +2987,11 @@
         <root>
           <root-step>G</root-step>
         </root>
-        <kind />
-        <degree>
-          <degree-value>4</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>3</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <kind>dominant</kind>
+        <inversion>2</inversion>
+        <bass>
+          <bass-step>D</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -3341,17 +3324,11 @@
         <root>
           <root-step>G</root-step>
         </root>
-        <kind />
-        <degree>
-          <degree-value>6</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>5</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <kind>dominant</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>B</bass-step>
+        </bass>
       </harmony>
       <note>
         <grace slash="yes" />
@@ -3649,10 +3626,6 @@
           <root-step>D</root-step>
         </root>
         <kind>major</kind>
-        <inversion>5</inversion>
-        <bass>
-          <bass-step>G</bass-step>
-        </bass>
       </harmony>
       <note>
         <pitch>
@@ -3749,17 +3722,11 @@
         <root>
           <root-step>G</root-step>
         </root>
-        <kind />
-        <degree>
-          <degree-value>4</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>3</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <kind>dominant</kind>
+        <inversion>2</inversion>
+        <bass>
+          <bass-step>D</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -3842,7 +3809,11 @@
         <root>
           <root-step>C</root-step>
         </root>
-        <kind>major-sixth</kind>
+        <kind>major</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>E</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -3987,17 +3958,11 @@
         <root>
           <root-step>G</root-step>
         </root>
-        <kind />
-        <degree>
-          <degree-value>4</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
-        <degree>
-          <degree-value>3</degree-value>
-          <degree-alter>0</degree-alter>
-          <degree-type>add</degree-type>
-        </degree>
+        <kind>dominant</kind>
+        <inversion>2</inversion>
+        <bass>
+          <bass-step>D</bass-step>
+        </bass>
       </harmony>
       <note>
         <pitch>
@@ -4139,7 +4104,12 @@
         <root>
           <root-step>E</root-step>
         </root>
-        <kind>major-sixth</kind>
+        <kind>major</kind>
+        <inversion>1</inversion>
+        <bass>
+          <bass-step>G</bass-step>
+          <bass-alter>1</bass-alter>
+        </bass>
       </harmony>
       <note>
         <pitch>
