@@ -8,16 +8,12 @@ import numpy as np
 from music21.converter import parse
 from music21.harmony import ChordSymbol
 from music21.stream import Measure, Stream
-"""
-a script which takes an annotated .xml/.mxl file as input and maps it into a .tsv file.
-"""
 
-    
-def get_measures_df_from_music21_score(m21_score: music21.stream.Score) -> pd.DataFrame:
+def get_chords_and_measures_df_from_m21_score(m21_score: music21.stream.Score) -> pd.DataFrame:
     """
-    Compute and return a measures_df (that can be used to create a ScorePiece) from a
-    parsed music21 Score.
-
+    a script which takes an annotated .xml/.mxl file as input and maps it into a .tsv file.
+    """
+    """
     Parameters
     ----------
     m21_score : music21.stream.Score
@@ -25,9 +21,10 @@ def get_measures_df_from_music21_score(m21_score: music21.stream.Score) -> pd.Da
 
     Returns
     -------
-    measures_df : pd.DataFrame
+    1. measures_df : pd.DataFrame
         A measures_df with the following columns:
             'mc' (int): The measure index.
+            "annotations": The harmonic annotation of each measure.
             'timesig' (str): The time signature of each measure.
             'start' (Fraction): The "offset" position at the start of each measure, in
                                 whole notes since the beginning of the piece.
@@ -35,10 +32,15 @@ def get_measures_df_from_music21_score(m21_score: music21.stream.Score) -> pd.Da
             'mc_offset' (Fraction): The starting position of this measure, in whole notes
                                  after the most recent downbeat.
             'next' (int): The measure index of the measure that follows each one.
+
+    2. chords_df : pd.DataFrame
+        A chords_df with the following columns:
+            'mn' (int): The measure number
+            'annotations' (str): The annotations of each measure
     """
-    # Lists to compute and add to measures_df
+    # Lists to compute and add to output
     time_signatures = []
-    annotations = []
+    # annotations = []
     starts = []
     lengths = []
     df_offsets = []
@@ -58,22 +60,28 @@ def get_measures_df_from_music21_score(m21_score: music21.stream.Score) -> pd.Da
         if bracket.number.startswith("1")
     ]
     skipped_dur = 0
-
-    # Add Annotations to a list
+    
+    # J: Add Annotations to a list
 
     chord_symbols = []
+    chords_by_measure = []
     for element in m21_score.recurse().getElementsByClass(ChordSymbol):
         measure = element.getContextByClass("Measure")
-        # element.activeSite.remove(element)
-        chord_symbols.append(element)
+        # element.activeSite.remove(element) # Do we need that?
+        chord_symbols.append(element.figure)# OR str(element) OR element.pitchedCommonName
+        chords_by_measure.append(element.measureNumber) 
         # print(element, measure)
-    # print(existing_chord_symbols)
-
+    # print(chord_symbols, chords_by_measure) # for checking
 
     # Go through the measures and add them to the tracking lists
     for mc, (offset, measures_list) in enumerate(m21_score.measureOffsetMap().items()):
         offset = Fraction(offset) / 4 - skipped_dur
         measure = measures_list[0]
+
+        # chord_symbols = []
+        # for element in measure.recurse().getElementsByClass(ChordSymbol):
+        #     # element.activeSite.remove(element)
+        #     chord_symbols.append(element)
 
         skip = False
         for start, end in first_endings:
@@ -95,38 +103,63 @@ def get_measures_df_from_music21_score(m21_score: music21.stream.Score) -> pd.Da
                 if mc != 0:
                     ts_epoch = offset
 
+
+
         if lengths:
             # Set the length of each bar to the difference between consecutive measure offsets
             lengths[-1] = offset - starts[-1]
         # Default (used only for the last measure)
         lengths.append(Fraction(measure.duration.quarterLength) / 4)
-
+        # annotations.append(chord_symbols)
         starts.append(offset)
         time_signatures.append(time_signature)
         df_offsets.append((offset - ts_epoch) % ts_duration)
         mns.append(measure.measureNumber)
-        annotations.append(chord_symbols)
-
+        
     mcs = list(range(len(mns)))
 
     return pd.DataFrame(
         {
             "mc": mcs,
             "mn": mns,
-            "annotations": annotations,
             "timesig": time_signatures,
             "start": starts,
             "act_dur": lengths,
             MEASURE_OFFSET: df_offsets,
             "next": mcs[1:] + [pd.NA],
         }
+    ), pd.DataFrame(
+        {
+        # "mc": mcs,
+        "mn": chords_by_measure,
+        "annotations": chord_symbols
+        }
     )
 
-def score_to_df(
-    music_xml_path: Union[Path, str]
+
+"""
+tsv conversion function
+"""
+def score_to_tsv(
+    music_xml_path: Union[Path, str],
+    output_dir: Union[Path, str] = None
 ):
     m21_score: Stream = parse(music_xml_path)
-    df = get_measures_df_from_music21_score(m21_score)
-    print(df.head())
+    measures_df, chords_df = get_chords_and_measures_df_from_m21_score(m21_score)
+    
+    if output_dir is None:
+        output_dir = Path(music_xml_path).parent
+    else:
+        output_dir = Path(output_dir)
+        output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Auto-generate filename from input
+    output_path = output_dir / f"{Path(music_xml_path).stem}.tsv"
+    
+    chords_df.to_csv(output_path, sep="\t", index=False)
+    return measures_df, chords_df
 
-    # how to display the annotations in pandas df
+score_to_tsv(
+    music_xml_path="mels_to_harmonize/score_192-Qualquer_coisa-Irineu_de_Almeida.xml", # implement that an entire directory can be passed and converted to tsv?
+    output_dir="tests_tsv"  # folder only
+)
