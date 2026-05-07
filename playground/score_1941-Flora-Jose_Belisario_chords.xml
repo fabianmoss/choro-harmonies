@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">José Belisário</creator>
     <encoding>
-      <encoding-date>2026-04-27</encoding-date>
+      <encoding-date>2026-05-07</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
     </encoding>
@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Klavier</part-name>
       <part-abbreviation>Klav.</part-abbreviation>
-      <score-instrument id="I3e131738a9827941ee973e6d7a0aebd3">
+      <score-instrument id="Ibbbf1e32c99a8da55ed5cd5172c8c526">
         <instrument-name>Klavier</instrument-name>
       </score-instrument>
-      <midi-instrument id="I3e131738a9827941ee973e6d7a0aebd3">
+      <midi-instrument id="Ibbbf1e32c99a8da55ed5cd5172c8c526">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>

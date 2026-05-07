@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Irineu de Almeida</creator>
     <encoding>
-      <encoding-date>2026-04-27</encoding-date>
+      <encoding-date>2026-05-07</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
     </encoding>
@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Klavier</part-name>
       <part-abbreviation>Klav.</part-abbreviation>
-      <score-instrument id="Ib66db1f56d1525f9901b724e2193edcc">
+      <score-instrument id="I56757d33a911e6f8de265118407c4da6">
         <instrument-name>Klavier</instrument-name>
       </score-instrument>
-      <midi-instrument id="Ib66db1f56d1525f9901b724e2193edcc">
+      <midi-instrument id="I56757d33a911e6f8de265118407c4da6">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
