@@ -8,6 +8,7 @@ import numpy as np
 from music21.converter import parse
 from music21.harmony import ChordSymbol
 from music21.stream import Measure, Stream
+import glob
 
 def get_chords_and_measures_df_from_m21_score(m21_score: music21.stream.Score) -> pd.DataFrame:
     """
@@ -70,18 +71,13 @@ def get_chords_and_measures_df_from_m21_score(m21_score: music21.stream.Score) -
         # element.activeSite.remove(element) # Do we need that?
         chord_symbols.append(element.figure)# OR str(element) OR element.pitchedCommonName
         chords_by_measure.append(element.measureNumber) 
-        # print(element, measure)
-    # print(chord_symbols, chords_by_measure) # for checking
+
+
 
     # Go through the measures and add them to the tracking lists
     for mc, (offset, measures_list) in enumerate(m21_score.measureOffsetMap().items()):
         offset = Fraction(offset) / 4 - skipped_dur
         measure = measures_list[0]
-
-        # chord_symbols = []
-        # for element in measure.recurse().getElementsByClass(ChordSymbol):
-        #     # element.activeSite.remove(element)
-        #     chord_symbols.append(element)
 
         skip = False
         for start, end in first_endings:
@@ -142,24 +138,40 @@ tsv conversion function
 """
 def score_to_tsv(
     music_xml_path: Union[Path, str],
-    output_dir: Union[Path, str] = None
+    output_dir: Union[Path, str] = None # make it optional 
 ):
-    m21_score: Stream = parse(music_xml_path)
-    measures_df, chords_df = get_chords_and_measures_df_from_m21_score(m21_score)
-    
+    # Convert to Path immediately to use .is_dir() later on it
+    music_xml_path = Path(music_xml_path)
+
+
     if output_dir is None:
-        output_dir = Path(music_xml_path).parent
+        output_dir = music_xml_path.parent # save in parent folder of the musicxml-files
     else:
         output_dir = Path(output_dir)
-        output_dir.mkdir(parents=True, exist_ok=True)
+        output_dir.mkdir(parents=True, exist_ok=True) # create new directory
+
+    # Collect files
+    if music_xml_path.is_dir():
+        all_music_xml = [
+            Path(x) for x in sorted(
+                glob.glob(str(music_xml_path / "**" / "*.mxl"), recursive=True)
+                + glob.glob(str(music_xml_path / "**" / "*.xml"), recursive=True)
+            )
+        ]
+    else: # when passing in a single file
+        all_music_xml = [Path(music_xml_path)]
     
-    # Auto-generate filename from input
-    output_path = output_dir / f"{Path(music_xml_path).stem}.tsv"
-    
-    chords_df.to_csv(output_path, sep="\t", index=False)
-    return measures_df, chords_df
+    for music_xml_path in all_music_xml:
+        m21_score = parse(music_xml_path)
+        measures_df, chords_df = get_chords_and_measures_df_from_m21_score(m21_score)
+        
+        # Auto-generate filename from each input file
+        output_path = output_dir / f"{music_xml_path.stem}.tsv"
+        chords_df.to_csv(output_path, sep="\t", index=False)
+
+    return chords_df # , measures_df
 
 score_to_tsv(
-    music_xml_path="mels_to_harmonize/score_192-Qualquer_coisa-Irineu_de_Almeida.xml", # implement that an entire directory can be passed and converted to tsv?
+    music_xml_path="mels_to_harmonize/",
     output_dir="tests_tsv"  # folder only
 )
