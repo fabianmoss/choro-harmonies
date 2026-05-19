@@ -338,7 +338,7 @@ if __name__ == "__main__":
         ),
     )
 
-    parser.add_argument(
+    parser.add_argument( # debug needed
         "-v",
         "--verbose",
         action="store_true",
