@@ -88,5 +88,5 @@ def score_to_tsv(
 # CALL
 score_to_tsv(
     music_xml_path="mels_to_harmonize/",
-    output_dir="tests_tsv"  # folder only
+    output_dir="outputs_xml_to_tsv"  # folder only
 )
