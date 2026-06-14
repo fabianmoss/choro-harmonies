@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Anacleto de Medeiros</creator>
     <encoding>
-      <encoding-date>2026-05-07</encoding-date>
+      <encoding-date>2026-06-14</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
@@ -71,10 +71,10 @@
     <score-part id="P1">
       <part-name>Piano</part-name>
       <part-abbreviation>Pno.</part-abbreviation>
-      <score-instrument id="I965d46bb07d2d9eb02c0f52b8f2acd16">
+      <score-instrument id="Ia0f1fc22385957a73319814d32b6dd86">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="I965d46bb07d2d9eb02c0f52b8f2acd16">
+      <midi-instrument id="Ia0f1fc22385957a73319814d32b6dd86">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>

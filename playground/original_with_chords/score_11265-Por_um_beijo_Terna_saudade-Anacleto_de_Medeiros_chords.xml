@@ -9,7 +9,7 @@
     <creator type="composer">Anacleto de Medeiros</creator>
     <creator type="lyricist">Catulo da Paixao Cearense</creator>
     <encoding>
-      <encoding-date>2026-05-28</encoding-date>
+      <encoding-date>2026-06-14</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
@@ -74,10 +74,10 @@
     <score-part id="P1">
       <part-name>Piano</part-name>
       <part-abbreviation>Pno.</part-abbreviation>
-      <score-instrument id="If9642bc58f0e51a29d16dca48828c026">
+      <score-instrument id="Ie0bc3db474477a5c37d7d88a9d12d07f">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="If9642bc58f0e51a29d16dca48828c026">
+      <midi-instrument id="Ie0bc3db474477a5c37d7d88a9d12d07f">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
