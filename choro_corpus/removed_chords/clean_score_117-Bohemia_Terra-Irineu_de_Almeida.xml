@@ -71,10 +71,10 @@
     <score-part id="P1">
       <part-name>Trombone</part-name>
       <part-abbreviation>Tbn.</part-abbreviation>
-      <score-instrument id="Ib709c16a01f7383a4b15c12afa3a2fb4">
+      <score-instrument id="I6f8af76e9b25a36052e1a72254ea83b9">
         <instrument-name>Trombone</instrument-name>
       </score-instrument>
-      <midi-instrument id="Ib709c16a01f7383a4b15c12afa3a2fb4">
+      <midi-instrument id="I6f8af76e9b25a36052e1a72254ea83b9">
         <midi-channel>1</midi-channel>
         <midi-program>58</midi-program>
       </midi-instrument>

@@ -68,10 +68,10 @@
     <score-part id="P1">
       <part-name>Klavier</part-name>
       <part-abbreviation>Klav.</part-abbreviation>
-      <score-instrument id="Ie993f79ed16b16b488cac67e8048c0c1">
+      <score-instrument id="Ib59275b6925e760abebfd2e267ce560b">
         <instrument-name>Klavier</instrument-name>
       </score-instrument>
-      <midi-instrument id="Ie993f79ed16b16b488cac67e8048c0c1">
+      <midi-instrument id="Ib59275b6925e760abebfd2e267ce560b">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
