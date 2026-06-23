@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Álvaro Sandim</creator>
     <encoding>
-      <encoding-date>2026-06-19</encoding-date>
+      <encoding-date>2026-06-23</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
@@ -71,10 +71,10 @@
     <score-part id="P1">
       <part-name>Piano</part-name>
       <part-abbreviation>Pno.</part-abbreviation>
-      <score-instrument id="I2ad9a8d2646522b060818fd03736e7e3">
+      <score-instrument id="Idd588153e581884ddce39b2d3d02a495">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="I2ad9a8d2646522b060818fd03736e7e3">
+      <midi-instrument id="Idd588153e581884ddce39b2d3d02a495">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>

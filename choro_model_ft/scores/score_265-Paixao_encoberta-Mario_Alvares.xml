@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Mário Álvares da Conceição</creator>
     <encoding>
-      <encoding-date>2026-06-19</encoding-date>
+      <encoding-date>2026-06-23</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
     </encoding>
@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Flöte</part-name>
       <part-abbreviation>Fl.</part-abbreviation>
-      <score-instrument id="I01adfb69faf93d9360311828ce933ea2">
+      <score-instrument id="I25e20594576e0ead996d842f43be81f3">
         <instrument-name>Flöte</instrument-name>
       </score-instrument>
-      <midi-instrument id="I01adfb69faf93d9360311828ce933ea2">
+      <midi-instrument id="I25e20594576e0ead996d842f43be81f3">
         <midi-channel>1</midi-channel>
         <midi-program>74</midi-program>
       </midi-instrument>

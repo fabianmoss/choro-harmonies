@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Satyro Bilhar</creator>
     <encoding>
-      <encoding-date>2026-06-19</encoding-date>
+      <encoding-date>2026-06-23</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
@@ -71,10 +71,10 @@
     <score-part id="P1">
       <part-name>Piano</part-name>
       <part-abbreviation>Pno.</part-abbreviation>
-      <score-instrument id="I6fce4f0e4fdeadea0680e716999e0fa9">
+      <score-instrument id="I8ba1306b6b7d3f8228861eb1fc489dd5">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="I6fce4f0e4fdeadea0680e716999e0fa9">
+      <midi-instrument id="I8ba1306b6b7d3f8228861eb1fc489dd5">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>

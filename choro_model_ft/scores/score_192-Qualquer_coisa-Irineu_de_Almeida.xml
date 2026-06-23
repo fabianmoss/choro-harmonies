@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Komponist / Arrangeur</creator>
     <encoding>
-      <encoding-date>2026-06-19</encoding-date>
+      <encoding-date>2026-06-23</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
     </encoding>
@@ -23,10 +23,10 @@
     <score-part id="P1">
       <part-name>Posaune</part-name>
       <part-abbreviation>Pos.</part-abbreviation>
-      <score-instrument id="I4434cdfd8026c371d2d49255546ed68a">
+      <score-instrument id="Ia5a5b8bd5196e81b51917e7d2cb2065d">
         <instrument-name>Posaune</instrument-name>
       </score-instrument>
-      <midi-instrument id="I4434cdfd8026c371d2d49255546ed68a">
+      <midi-instrument id="Ia5a5b8bd5196e81b51917e7d2cb2065d">
         <midi-channel>1</midi-channel>
         <midi-program>58</midi-program>
       </midi-instrument>

@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Bonfíglio de Oliveira</creator>
     <encoding>
-      <encoding-date>2026-06-19</encoding-date>
+      <encoding-date>2026-06-23</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
@@ -71,10 +71,10 @@
     <score-part id="P1">
       <part-name>Klavier</part-name>
       <part-abbreviation>Klav.</part-abbreviation>
-      <score-instrument id="I8a2d512596b9f7ac3a5acce13966d155">
+      <score-instrument id="Ib26ee199d14ab3d6f61d33a977e33225">
         <instrument-name>Klavier</instrument-name>
       </score-instrument>
-      <midi-instrument id="I8a2d512596b9f7ac3a5acce13966d155">
+      <midi-instrument id="Ib26ee199d14ab3d6f61d33a977e33225">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
