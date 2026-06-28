@@ -13,8 +13,8 @@ import harmonic_inference.data.datasets as ds
 from harmonic_inference.data.corpus_reading import load_clean_corpus_dfs
 from harmonic_inference.data.data_types import MAJOR_MINOR_REDUCTION, TRIAD_REDUCTION
 
-SPLITS = ["train", "valid", "test"]
-
+SPLITS = ["train", "valid", "test"] # map gloria to test
+    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Create the h5 dataset files for each type of dataset.",
@@ -139,7 +139,7 @@ if __name__ == "__main__":
         xmls = []
         csvs = []
 
-        for file_path in sorted(glob(os.path.join(ARGS.input, "**", "*.mxl"), recursive=True)):
+        for file_path in sorted(glob(os.path.join(ARGS.input, "**", "*.xml"), recursive=True)): # .mxl?
             music_xml_path = Path(file_path)
             label_csv_path = (
                 music_xml_path.parent.parent / "chords" / Path(str(music_xml_path.stem) + ".csv")
