@@ -13,7 +13,7 @@ import harmonic_inference.data.datasets as ds
 from harmonic_inference.data.corpus_reading import load_clean_corpus_dfs
 from harmonic_inference.data.data_types import MAJOR_MINOR_REDUCTION, TRIAD_REDUCTION
 
-SPLITS = ["train", "valid", "test"] # map gloria to test
+SPLITS = ["train", "valid", "test"]
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
