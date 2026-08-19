@@ -8,7 +8,7 @@
     <creator type="composer">Joaquim Callado</creator>
     <encoding>
       <software>MuseScore Studio 4.6.5</software>
-      <encoding-date>2026-08-17</encoding-date>
+      <encoding-date>2026-08-19</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>
@@ -1410,11 +1410,13 @@
       <note default-x="171.97" default-y="-15">
         <pitch>
           <step>C</step>
+          <alter>1</alter>
           <octave>5</octave>
           </pitch>
         <duration>1</duration>
         <voice>1</voice>
         <type>16th</type>
+        <accidental>sharp</accidental>
         <stem>up</stem>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -2454,7 +2456,7 @@
         <beam number="2">end</beam>
         </note>
       </measure>
-    <measure number="27" width="251.38">
+    <measure number="27" width="104.53">
       <harmony print-frame="no">
         <root>
           <root-step>G</root-step>
@@ -2483,7 +2485,18 @@
         <stem>down</stem>
         <beam number="1">end</beam>
         </note>
-      <note default-x="104.53" default-y="-15">
+      <direction placement="above">
+        <direction-type>
+          <words default-x="62.6" relative-y="20">Fine</words>
+          </direction-type>
+        <sound fine="yes"/>
+        </direction>
+      <barline location="right">
+        <bar-style>none</bar-style>
+        </barline>
+      </measure>
+    <measure number="X1" implicit="yes" width="146.85">
+      <note default-x="0" default-y="-15">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -2495,7 +2508,7 @@
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
         </note>
-      <note default-x="135.21" default-y="-30">
+      <note default-x="30.68" default-y="-30">
         <pitch>
           <step>G</step>
           <octave>4</octave>
@@ -2507,7 +2520,7 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
         </note>
-      <note default-x="165.89" default-y="-40">
+      <note default-x="61.36" default-y="-40">
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -2519,7 +2532,7 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
         </note>
-      <note default-x="196.57" default-y="-15">
+      <note default-x="92.03" default-y="-15">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -2839,12 +2852,6 @@
         <beam number="1">end</beam>
         <beam number="2">end</beam>
         </note>
-      <direction placement="above">
-        <direction-type>
-          <words default-x="212.5" relative-y="20">Fine</words>
-          </direction-type>
-        <sound fine="yes"/>
-        </direction>
       </measure>
     <measure number="32" width="263.98">
       <print new-system="yes">
@@ -3182,9 +3189,9 @@
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
         </note>
-      <note default-x="169.49" default-y="-20">
+      <note default-x="169.49" default-y="-30">
         <pitch>
-          <step>B</step>
+          <step>G</step>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -3726,7 +3733,12 @@
         <root>
           <root-step>D</root-step>
           </root>
-        <kind text="m">minor</kind>
+        <kind text="m" parentheses-degrees="yes">minor</kind>
+        <degree>
+          <degree-value>5</degree-value>
+          <degree-alter>-1</degree-alter>
+          <degree-type>alter</degree-type>
+          </degree>
         </harmony>
       <note default-x="12.5" default-y="-30">
         <pitch>
