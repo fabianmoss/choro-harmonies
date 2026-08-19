@@ -8,7 +8,7 @@
     <creator type="composer">Anacleto de Medeiros</creator>
     <encoding>
       <software>MuseScore Studio 4.6.5</software>
-      <encoding-date>2026-08-17</encoding-date>
+      <encoding-date>2026-08-19</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="yes" value="yes"/>
@@ -251,10 +251,10 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
         </note>
-      <note default-x="103.62" default-y="10">
+      <note default-x="103.62" default-y="20">
         <pitch>
-          <step>A</step>
-          <octave>5</octave>
+          <step>C</step>
+          <octave>6</octave>
           </pitch>
         <duration>1</duration>
         <voice>1</voice>
@@ -444,10 +444,10 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
         </note>
-      <note default-x="103.62" default-y="10">
+      <note default-x="103.62" default-y="20">
         <pitch>
-          <step>A</step>
-          <octave>5</octave>
+          <step>C</step>
+          <octave>6</octave>
           </pitch>
         <duration>1</duration>
         <voice>1</voice>
@@ -1404,13 +1404,11 @@
       <note default-x="43.51" default-y="25">
         <pitch>
           <step>D</step>
-          <alter>-1</alter>
           <octave>6</octave>
           </pitch>
         <duration>1</duration>
         <voice>1</voice>
         <type>16th</type>
-        <accidental>flat</accidental>
         <stem>down</stem>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -1576,7 +1574,7 @@
         <beam number="2">backward hook</beam>
         </note>
       </measure>
-    <measure number="16" width="248.88">
+    <measure number="16" width="152.03">
       <harmony print-frame="no">
         <root>
           <root-step>F</root-step>
@@ -1621,29 +1619,33 @@
         <type>eighth</type>
         <stem>down</stem>
         </note>
+      <direction placement="above">
+        <direction-type>
+          <words default-x="110.09" default-y="26.73" relative-y="20">Fine</words>
+          </direction-type>
+        <sound fine="yes"/>
+        </direction>
+      <barline location="right">
+        <bar-style>none</bar-style>
+        </barline>
+      </measure>
+    <measure number="X1" implicit="yes" width="96.86">
       <harmony print-frame="no">
         <root>
           <root-step>C</root-step>
           </root>
         <kind text="7">dominant</kind>
         </harmony>
-      <note default-x="152.03" default-y="-20">
-        <rest/>
+      <note default-x="12.63" default-y="-10">
+        <rest measure="yes"/>
         <duration>2</duration>
         <voice>1</voice>
-        <type>eighth</type>
         </note>
       <direction placement="above">
         <direction-type>
-          <words default-x="178.18" relative-y="20">To Coda</words>
+          <words default-x="57.12" relative-y="20">To &lt;sym&gt;coda&lt;/sym&gt;</words>
           </direction-type>
         <sound tocoda="codab"/>
-        </direction>
-      <direction placement="above">
-        <direction-type>
-          <words default-x="212.45" default-y="20.32" relative-y="20">Fine</words>
-          </direction-type>
-        <sound fine="yes"/>
         </direction>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
@@ -3593,13 +3595,6 @@
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
         </note>
-      <harmony print-frame="no">
-        <root>
-          <root-step>E</root-step>
-          <root-alter>-1</root-alter>
-          </root>
-        <kind>major</kind>
-        </harmony>
       <note default-x="44.34" default-y="10">
         <pitch>
           <step>A</step>
@@ -3612,6 +3607,13 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
         </note>
+      <harmony print-frame="no">
+        <root>
+          <root-step>E</root-step>
+          <root-alter>-1</root-alter>
+          </root>
+        <kind>major</kind>
+        </harmony>
       <note default-x="76.18" default-y="10">
         <pitch>
           <step>A</step>
@@ -3624,16 +3626,6 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
         </note>
-      <harmony print-frame="no">
-        <root>
-          <root-step>B</root-step>
-          <root-alter>-1</root-alter>
-          </root>
-        <kind>major</kind>
-        <bass arrangement="horizontal">
-          <bass-step>D</bass-step>
-          </bass>
-        </harmony>
       <note default-x="108.02" default-y="5">
         <pitch>
           <step>G</step>
@@ -3646,6 +3638,16 @@
         <beam number="1">end</beam>
         <beam number="2">end</beam>
         </note>
+      <harmony print-frame="no">
+        <root>
+          <root-step>B</root-step>
+          <root-alter>-1</root-alter>
+          </root>
+        <kind>major</kind>
+        <bass arrangement="horizontal">
+          <bass-step>D</bass-step>
+          </bass>
+        </harmony>
       <note default-x="139.86" default-y="5">
         <pitch>
           <step>G</step>
@@ -3658,12 +3660,6 @@
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
         </note>
-      <harmony print-frame="no">
-        <root>
-          <root-step>C</root-step>
-          </root>
-        <kind text="m">minor</kind>
-        </harmony>
       <note default-x="171.7" default-y="0">
         <pitch>
           <step>F</step>
@@ -3676,6 +3672,12 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
         </note>
+      <harmony print-frame="no">
+        <root>
+          <root-step>C</root-step>
+          </root>
+        <kind text="m">minor</kind>
+        </harmony>
       <note default-x="203.54" default-y="0">
         <pitch>
           <step>F</step>
