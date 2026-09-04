@@ -19,7 +19,7 @@ harmonic_inference.egg-info/**
 ismir/**
 emr/**
 model_jsons*/**
-output*/**
+# output*/**
 results*/**
 chord-features_data/**
 .DS_Store
