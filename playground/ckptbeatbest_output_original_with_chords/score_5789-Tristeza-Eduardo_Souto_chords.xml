@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Eduardo Souto</creator>
     <encoding>
-      <encoding-date>2026-06-18</encoding-date>
+      <encoding-date>2026-06-19</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
@@ -71,10 +71,10 @@
     <score-part id="P1">
       <part-name>Piano</part-name>
       <part-abbreviation>Pno.</part-abbreviation>
-      <score-instrument id="I1c7a5f14470193b44289ebbd72de1e42">
+      <score-instrument id="Idad9399f468450debb3f7f99c8433e39">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="I1c7a5f14470193b44289ebbd72de1e42">
+      <midi-instrument id="Idad9399f468450debb3f7f99c8433e39">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>

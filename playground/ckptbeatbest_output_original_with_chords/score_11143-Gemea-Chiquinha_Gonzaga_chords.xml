@@ -8,7 +8,7 @@
   <identification>
     <creator type="composer">Chiquinha Gonzaga</creator>
     <encoding>
-      <encoding-date>2026-06-14</encoding-date>
+      <encoding-date>2026-06-15</encoding-date>
       <software>music21 v.6.7.1</software>
       <software>MuseScore Studio 4.6.5</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
@@ -71,10 +71,10 @@
     <score-part id="P1">
       <part-name>Klavier</part-name>
       <part-abbreviation>Klav.</part-abbreviation>
-      <score-instrument id="Iadf0ecd12543764ad887e3b13deb4a02">
+      <score-instrument id="I3d87d84c283a38dc34466dce612253c0">
         <instrument-name>Klavier</instrument-name>
       </score-instrument>
-      <midi-instrument id="Iadf0ecd12543764ad887e3b13deb4a02">
+      <midi-instrument id="I3d87d84c283a38dc34466dce612253c0">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
