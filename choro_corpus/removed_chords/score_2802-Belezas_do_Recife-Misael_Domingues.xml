@@ -8,9 +8,9 @@
   <identification>
     <creator type="composer">Misael Domingues</creator>
     <encoding>
-      <encoding-date>2026-06-19</encoding-date>
+      <encoding-date>2026-09-28</encoding-date>
       <software>music21 v.6.7.1</software>
-      <software>MuseScore Studio 4.6.5</software>
+      <software>MuseScore Studio 4.6.3</software>
       <supports attribute="new-system" element="print" type="yes" value="yes" />
       <supports attribute="new-page" element="print" type="yes" value="yes" />
     </encoding>
@@ -59,22 +59,22 @@
     <lyric-font font-family="Edwin" font-size="10" />
   </defaults>
   <credit page="1">
-    <credit-words default-x="656.349206" default-y="1785.714286" font-size="22" justify="center" valign="top">Belezas do Recife</credit-words>
+    <credit-words default-x="656.35" default-y="1785.7187" font-size="22" justify="center" valign="top">Belezas do Recife</credit-words>
   </credit>
   <credit page="1">
-    <credit-words default-x="656.349206" default-y="1723.222097" font-size="14" justify="center" valign="top">polca</credit-words>
+    <credit-words default-x="656.35" default-y="1723.226512" font-size="14" justify="center" valign="top">polca</credit-words>
   </credit>
   <credit page="1">
-    <credit-words default-x="1218.960159" default-y="1676.366843" justify="right" valign="bottom">Misael Domingues</credit-words>
+    <credit-words default-x="1218.9617" default-y="1657.58048" justify="right" valign="bottom">Misael Domingues</credit-words>
   </credit>
   <part-list>
     <score-part id="P1">
       <part-name>Piano</part-name>
       <part-abbreviation>Pno.</part-abbreviation>
-      <score-instrument id="I37fc64b3d43185932a9c7b3f01c85255">
+      <score-instrument id="I7392e9b0d71250f6c7979051a5ed5e70">
         <instrument-name>Piano</instrument-name>
       </score-instrument>
-      <midi-instrument id="I37fc64b3d43185932a9c7b3f01c85255">
+      <midi-instrument id="I7392e9b0d71250f6c7979051a5ed5e70">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
@@ -90,7 +90,7 @@
             <left-margin>50</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <top-system-distance>185.89</top-system-distance>
+          <top-system-distance>204.68</top-system-distance>
         </system-layout>
       </print>
       <attributes>
@@ -107,7 +107,7 @@
           <line>2</line>
         </clef>
       </attributes>
-      <note default-x="108.42" default-y="10">
+      <note default-x="108.43" default-y="10">
         <pitch>
           <step>A</step>
           <octave>5</octave>
@@ -118,7 +118,7 @@
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
       </note>
-      <note default-x="139.47" default-y="5">
+      <note default-x="139.48" default-y="5">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -176,7 +176,7 @@
       </note>
     </measure>
     <!--========================= Measure 2 ==========================-->
-    <measure number="2" width="177.1">
+    <measure number="2" width="177.11">
       <note>
         <pitch>
           <step>G</step>
@@ -267,7 +267,7 @@
       </note>
     </measure>
     <!--========================= Measure 4 ==========================-->
-    <measure number="4" width="177.1">
+    <measure number="4" width="177.11">
       <note>
         <pitch>
           <step>F</step>
@@ -408,7 +408,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="86.31" default-y="-10">
@@ -704,7 +704,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="86.31" default-y="-50">
@@ -1058,7 +1058,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>112.05</system-distance>
         </system-layout>
       </print>
       <note default-x="86.31" default-y="15">
@@ -1175,9 +1175,9 @@
     </measure>
     <!--========================= Measure 23 =========================-->
     <measure number="23" width="198.08">
-      <direction>
+      <direction placement="above">
         <direction-type>
-          <segno default-x="-11.81" default-y="20" />
+          <words default-y="53.77" enclosure="none" font-family="Leland Text" relative-y="10"></words>
         </direction-type>
       </direction>
       <note default-x="12.5" default-y="-25">
@@ -1312,7 +1312,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="86.31" default-y="-30">
@@ -1622,7 +1622,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="86.31" default-y="-20">
@@ -1670,7 +1670,7 @@
         <beam number="1">end</beam>
         <beam number="2">end</beam>
       </note>
-      <note default-x="206.71" default-y="10">
+      <note default-x="206.72" default-y="10">
         <pitch>
           <step>A</step>
           <octave>5</octave>
@@ -1942,7 +1942,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="86.31" default-y="-10">
@@ -2254,7 +2254,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="97.26" default-y="-20">
@@ -2488,7 +2488,7 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
       </note>
-      <note default-x="118.76" default-y="-15">
+      <note default-x="118.77" default-y="-15">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -2541,7 +2541,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="97.26" default-y="-30">
@@ -2578,7 +2578,7 @@
         <beam number="1">end</beam>
         <beam number="2">end</beam>
       </note>
-      <note default-x="198.5" default-y="-10">
+      <note default-x="198.51" default-y="-10">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -2791,7 +2791,7 @@
       </note>
     </measure>
     <!--========================= Measure 48 =========================-->
-    <measure number="48" width="216.78">
+    <measure number="48" width="216.79">
       <note default-x="12.5" default-y="-20">
         <pitch>
           <step>B</step>
@@ -2871,7 +2871,7 @@
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="97.26" default-y="0">
@@ -3218,14 +3218,14 @@
       </note>
     </measure>
     <!--========================= Measure 54 =========================-->
-    <measure number="54" width="314.55">
+    <measure number="54" width="322.26">
       <print new-system="yes">
         <system-layout>
           <system-margins>
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <system-distance>98.79</system-distance>
         </system-layout>
       </print>
       <note default-x="97.26" default-y="-30">
@@ -3239,7 +3239,7 @@
         <stem>up</stem>
         <beam number="1">begin</beam>
       </note>
-      <note default-x="153.48" default-y="-30">
+      <note default-x="155.49" default-y="-30">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -3251,7 +3251,7 @@
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
       </note>
-      <note default-x="190.95" default-y="-35">
+      <note default-x="194.3" default-y="-35">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -3263,7 +3263,7 @@
         <beam number="1">end</beam>
         <beam number="2">end</beam>
       </note>
-      <note default-x="228.43" default-y="-25">
+      <note default-x="233.12" default-y="-25">
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -3274,7 +3274,7 @@
       </note>
     </measure>
     <!--========================= Measure 55 =========================-->
-    <measure number="55" width="274.95">
+    <measure number="55" width="283.66">
       <barline location="left">
         <bar-style>regular</bar-style>
         <ending number="1" type="start" />
@@ -3288,12 +3288,12 @@
         <type>eighth</type>
         <stem>up</stem>
       </note>
-      <note default-x="68.71" default-y="-20">
+      <note default-x="70.72" default-y="-20">
         <rest />
         <duration>5040</duration>
         <type>eighth</type>
       </note>
-      <note default-x="124.93" default-y="-30">
+      <note default-x="128.95" default-y="-30">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -3304,7 +3304,7 @@
         <stem>up</stem>
         <beam number="1">begin</beam>
       </note>
-      <note default-x="181.14" default-y="-30">
+      <note default-x="187.17" default-y="-30">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -3316,7 +3316,7 @@
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
       </note>
-      <note default-x="218.62" default-y="-25">
+      <note default-x="225.99" default-y="-25">
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -3333,7 +3333,7 @@
       </barline>
     </measure>
     <!--========================= Measure 56 =========================-->
-    <measure number="56" width="248.53">
+    <measure number="56" width="256.9">
       <barline location="left">
         <bar-style>regular</bar-style>
         <ending number="2" type="start" />
@@ -3349,7 +3349,7 @@
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
       </note>
-      <note default-x="49.98" default-y="5">
+      <note default-x="51.32" default-y="5">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -3361,7 +3361,7 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
       </note>
-      <note default-x="87.45" default-y="15">
+      <note default-x="90.13" default-y="15">
         <pitch>
           <step>B</step>
           <octave>5</octave>
@@ -3372,7 +3372,7 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
       </note>
-      <note default-x="124.93" default-y="10">
+      <note default-x="128.95" default-y="10">
         <pitch>
           <step>A</step>
           <octave>5</octave>
@@ -3383,7 +3383,7 @@
         <beam number="1">end</beam>
         <beam number="2">end</beam>
       </note>
-      <note default-x="162.4" default-y="0">
+      <note default-x="167.77" default-y="0">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -3399,7 +3399,7 @@
       </barline>
     </measure>
     <!--========================= Measure 57 =========================-->
-    <measure number="57" width="287.2">
+    <measure number="57" width="262.4">
       <note default-x="12.5" default-y="-25">
         <pitch>
           <step>A</step>
@@ -3411,7 +3411,7 @@
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
       </note>
-      <note default-x="49.98" default-y="-30">
+      <note default-x="51.32" default-y="-30">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -3423,7 +3423,7 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
       </note>
-      <note default-x="87.45" default-y="-20">
+      <note default-x="90.13" default-y="-20">
         <pitch>
           <step>B</step>
           <octave>4</octave>
@@ -3434,7 +3434,7 @@
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
       </note>
-      <note default-x="124.93" default-y="-25">
+      <note default-x="128.95" default-y="-25">
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -3445,7 +3445,7 @@
         <beam number="1">end</beam>
         <beam number="2">end</beam>
       </note>
-      <note default-x="162.4" default-y="-60">
+      <note default-x="167.77" default-y="-60">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -3456,7 +3456,7 @@
       </note>
       <direction placement="above">
         <direction-type>
-          <words enclosure="none" justify="right" relative-y="20">D.S.</words>
+          <words default-y="10.53" enclosure="none" justify="right" relative-y="10">D.S.</words>
         </direction-type>
       </direction>
       <barline location="right">
@@ -3465,13 +3465,13 @@
     </measure>
     <!--========================= Measure 58 =========================-->
     <measure number="58" width="364.95">
-      <print new-system="yes">
+      <print new-page="yes">
         <system-layout>
           <system-margins>
             <left-margin>0</left-margin>
             <right-margin>0</right-margin>
           </system-margins>
-          <system-distance>89.09</system-distance>
+          <top-system-distance>93.9</top-system-distance>
         </system-layout>
       </print>
       <note default-x="97.26" default-y="-20">
