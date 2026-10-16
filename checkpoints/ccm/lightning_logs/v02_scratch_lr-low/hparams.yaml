@@ -1,0 +1,15 @@
+dropout: 0.0
+embed_dim: 128
+hidden_dim: 128
+input_mask: null
+input_pitch: TPC
+input_type: SCORE
+learning_rate: 0.0005
+lstm_hidden_dim: 128
+lstm_layers: 1
+output_pitch: TPC
+reduction: null
+transposition_range: !!python/tuple
+- 0
+- 0
+use_inversions: true
