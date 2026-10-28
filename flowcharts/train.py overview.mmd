@@ -1,0 +1,30 @@
+flowchart LR
+  N0("train.py")
+  N1(("H5 DATA"))
+  N2(("PRETRAINED MODELS .ckpt files"))
+  N3(("FINETUNED MODELS .ckpt files"))
+  N4{"created in createh5 overview"}
+  N5["```bash python train.py  --model INSERT MODEL (e.g. ctm)  --h5_dir h5_data  -w 0 (only on apple device)  --gpu 0 (if want to run on GPU) --resume SPECIFY CHECKPOINT TO RESUME FROM ```"]
+  N6["Blue: Repo location"]
+  N7["Red: INPUT"]
+  N8["Green: OUTPUT"]
+  N9["checkpoints-beat-best/..."]
+  N10["checkpoints/..."]
+  N1 --> N0
+  N2 --> N0
+  N0 --> N3
+  N4 --> N1
+style N0 stroke:#1e1e1e,fill:none
+style N1 stroke:#e03131,fill:none,color:#e03131
+style N2 stroke:#e03131,fill:none,color:#e03131
+style N3 stroke:#2f9e44,fill:none,color:#2f9e44
+style N4 stroke:#f08c00,fill:none,color:#f08c00
+style N5 fill:none,stroke:none
+style N6 fill:none,stroke:none,color:#1971c2
+style N7 fill:none,stroke:none,color:#e03131
+style N8 fill:none,stroke:none,color:#2f9e44
+style N9 fill:none,stroke:none,color:#1971c2
+style N10 fill:none,stroke:none,color:#1971c2
+linkStyle 0 stroke:#e03131
+linkStyle 1 stroke:#e03131
+linkStyle 3 stroke:#f08c00

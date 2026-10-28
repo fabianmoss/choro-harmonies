@@ -1,0 +1,30 @@
+flowchart LR
+  N0("annotate.py")
+  N1(("SCORES (with removed chord symbols) .xml files"))
+  N2(("(FINETUNED) MODELS .ckpt files"))
+  N3{"created in train.py overview"}
+  N4(("INFERENCE OUTPUTS .tsv files [label, mc, mc_onset, mn_onset]"))
+  N5["Green: OUTPUT"]
+  N6["RED: INPUT"]
+  N7["```bash python annotate.py --input choro_corpus/removed_chords (we need empty scores to write annotations on) --xml  --checkpoint SPECIFY MODEL CKPT --label-type jazz  --model CKPT FILE TO LOAD THE model FROM (if you want to use only 1 finetuned model for example) ```"]
+  N8["choro_corpus/ removed_chords"]
+  N9["Blue: Repo location"]
+  N10["checkpoints/..."]
+  N11["outputs"]
+  N3 --> N2
+  N1 --> N0
+  N2 --> N0
+  N0 --> N4
+style N0 stroke:#1e1e1e,fill:none
+style N1 stroke:#e03131,fill:none,color:#e03131
+style N2 stroke:#e03131,fill:none,color:#e03131
+style N3 stroke:#f08c00,fill:none,color:#f08c00
+style N4 stroke:#2f9e44,fill:none,color:#2f9e44
+style N5 fill:none,stroke:none,color:#2f9e44
+style N6 fill:none,stroke:none,color:#e03131
+style N7 fill:none,stroke:none
+style N8 fill:none,stroke:none,color:#1971c2
+style N9 fill:none,stroke:none,color:#1971c2
+style N10 fill:none,stroke:none,color:#1971c2
+style N11 fill:none,stroke:none,color:#1971c2
+linkStyle 0 stroke:#f08c00

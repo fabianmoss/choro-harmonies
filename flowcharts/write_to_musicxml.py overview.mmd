@@ -1,0 +1,30 @@
+flowchart LR
+  N0("write_to_musicxml.py")
+  N1(("SCORES .xml files"))
+  N2(("INFERENCE OUTPUTS .tsv files"))
+  N3{"created in annotate.py overview"}
+  N4(("LABELED MUSICXML FILE"))
+  N5["```bash python write_to_musicxml.py  -x choro_corpus/INSERTSUBDIR  --labels outputs/  -o playground/INSERTSUBDIR ```"]
+  N6["Blue: Repo location"]
+  N7["Red: INPUT"]
+  N8["Green: OUTPUT"]
+  N9["choro_corpus/ removed_chords"]
+  N10["outputs"]
+  N11["playground/..."]
+  N3 --> N2
+  N2 --> N0
+  N1 --> N0
+  N0 --> N4
+style N0 stroke:#1e1e1e,fill:none
+style N1 stroke:#e03131,fill:none,color:#e03131
+style N2 stroke:#e03131,fill:none,color:#e03131
+style N3 stroke:#f08c00,fill:none,color:#f08c00
+style N4 stroke:#2f9e44,fill:none,color:#2f9e44
+style N5 fill:none,stroke:none
+style N6 fill:none,stroke:none,color:#1971c2
+style N7 fill:none,stroke:none,color:#e03131
+style N8 fill:none,stroke:none,color:#2f9e44
+style N9 fill:none,stroke:none,color:#1971c2
+style N10 fill:none,stroke:none,color:#1971c2
+style N11 fill:none,stroke:none,color:#1971c2
+linkStyle 0 stroke:#f08c00

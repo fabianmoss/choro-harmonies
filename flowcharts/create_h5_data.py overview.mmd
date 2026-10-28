@@ -1,0 +1,43 @@
+flowchart LR
+  N0("create_h5_data.py")
+  N1(("SCORES .xml files containing melodies and chord labels"))
+  N2(("KEY ANNOTATIONS (keys_choro_pieces.csv) score_id, key_onset_measure, key, mode"))
+  N3(("CHORD+KEY LABELS .tsv files columns: on, off, key, degree, type, inv"))
+  N4("csv_from_xml.ipynb")
+  N5(("H5 DATA FILES [train, valid, test] for each model type"))
+  N6{"created by Mauro manually"}
+  N7["Green: OUTPUT"]
+  N8["Red: INPUT"]
+  N9["```bash python create_h5_data.py  --xml  --input choro_model_ft/scores/ --seed SPECIFY SEED! ```"]
+  N10["Blue: Repo location"]
+  N11["choro_corpus/keys_choro_pieces.csv"]
+  N12["choro_model_ft/scores"]
+  N13["note: create_h5_data.py needs scores + chord/key labels in same dir (directories: choro_model_ft/scores | chords)"]
+  N14["choro_model_ft/chords"]
+  N15["!!! score192 needs to be excluded when running create_h5_data.py for the KSM model"]
+  N16["h5_data"]
+  N4 --> N3
+  N1 --> N4
+  N2 --> N4
+  N1 --> N0
+  N3 --> N0
+  N0 --> N5
+  N6 --> N2
+style N0 stroke:#1e1e1e,fill:none
+style N1 stroke:#e03131,fill:none,color:#e03131
+style N2 stroke:#e03131,fill:none,color:#e03131
+style N3 stroke:#1e1e1e,fill:none
+style N4 stroke:#1e1e1e,fill:none
+style N5 stroke:#2f9e44,fill:none,color:#2f9e44
+style N6 stroke:#f08c00,fill:none,color:#f08c00
+style N7 fill:none,stroke:none,color:#2f9e44
+style N8 fill:none,stroke:none,color:#e03131
+style N9 fill:none,stroke:none
+style N10 fill:none,stroke:none,color:#1971c2
+style N11 fill:none,stroke:none,color:#1971c2
+style N12 fill:none,stroke:none,color:#1971c2
+style N13 fill:none,stroke:none
+style N14 fill:none,stroke:none,color:#1971c2
+style N15 fill:none,stroke:none,color:#e00b0b
+style N16 fill:none,stroke:none,color:#1971c2
+linkStyle 6 stroke:#f08c00
