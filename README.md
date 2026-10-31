@@ -1,4 +1,4 @@
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/fabianmoss/choro-harmonies)
+<a href="https://deepwiki.com/fabianmoss/choro-harmonies"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 
 ### h5_data seeds
 
