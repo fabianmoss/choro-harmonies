@@ -1,0 +1,9 @@
+dropout: 0.0
+embed_dim: 64
+hidden_dim: 64
+input_mask: null
+input_type: SCORE
+learning_rate: 0.001
+lstm_hidden_dim: 128
+lstm_layers: 1
+pitch_type: TPC
