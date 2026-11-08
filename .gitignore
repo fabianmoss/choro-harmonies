@@ -15,6 +15,7 @@ corpus_data*/**
 data/**
 debug.py
 h5_data*/**
+h5_ksm*/**
 harmonic_inference.egg-info/**
 ismir/**
 emr/**
@@ -23,3 +24,4 @@ output*/**
 results*/**
 chord-features_data/**
 .DS_Store
+playground*/**
