@@ -3,8 +3,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from chord_eval.data_types import ChordType
-from chord_eval.progression import (
+from chord_eval.scripts.data_types import ChordType
+from chord_eval.scripts.progression import (
     duration_overlap,
     get_progression,
     overlap,
@@ -15,13 +15,11 @@ from chord_eval.progression import (
 # FILE PATHS
 # ============================================================
 
-BASE_DIR = Path(
-    "/Users/maurowindholz/Documents/Documents/Wuerzburg_Postdoc/"
-    "Choro_transcriptions/absolute_chords_csvs"
-)
+BASE_DIR = Path(__file__).resolve().parent / "chord_eval"
 
-ORIGINAL_DIR = BASE_DIR / "originals"
-AUTOMATIC_DIR = BASE_DIR / "model_outputs_absolute"
+
+ORIGINAL_DIR = BASE_DIR / "originals" # csv representation of original score
+AUTOMATIC_DIR = BASE_DIR / "ft_ccm6_csm3_ksm2_ktm0" # model outputs to compare originals with
 OUTPUT_DIR = BASE_DIR / "progression_distances"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -30,6 +28,32 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # ============================================================
 # ROOT AND QUALITY CONVERSION
 # ============================================================
+
+ROMAN_TO_SEMITONE = {
+    # Diatonic major degrees
+    "I": 0,
+    "II": 2,
+    "III": 4,
+    "IV": 5,
+    "V": 7,
+    "VI": 9,
+    "VII": 11,
+
+    # altered degrees
+    "bI": 11,
+    "#I": 1,
+    "bII": 1,
+    "#II": 3,
+    "bIII": 3,
+    "#III": 5,
+    "#IV": 6,
+    "bV": 6,
+    "#V": 8,
+    "bVI": 8,
+    "#VI": 10,
+    "bVII": 10,
+    "#VII": 0
+}
 
 ROOT_TO_MIDI = {
     "C": 0,
@@ -80,7 +104,7 @@ QUALITY_TO_CHORDTYPE = {
 
     "d7": ChordType.DIM7,
     "h7": ChordType.HALF_DIM7,
-}
+    }
 
 
 # ============================================================
@@ -132,6 +156,19 @@ def prepare_progression_df(
         dtype=str,
         keep_default_na=True,
     )
+    df = df[df[4].str.strip() != "unknown"].reset_index(drop=True)
+
+    durations = df.apply(
+        lambda row: (
+            Fraction(str(row[1]).strip())
+            - Fraction(str(row[0]).strip())
+        ),
+        axis=1,
+    )
+    # Filter out zero or negative duration events
+    valid_durations = (durations > 0) & durations.notna()
+    df = df[valid_durations].reset_index(drop=True)
+    durations = durations[valid_durations].reset_index(drop=True)
 
     # Some files have no seventh column.
     if 6 in df.columns:
@@ -143,7 +180,9 @@ def prepare_progression_df(
             dtype=object,
         )
 
-    root_midi = df[3].str.strip().map(ROOT_TO_MIDI)
+    # map roman numerals 
+    root_midi = df[3].str.strip().map(ROMAN_TO_SEMITONE)
+    
     chord_type = df[4].str.strip().map(QUALITY_TO_CHORDTYPE)
 
     # Stop early if a root was not recognized.
@@ -157,25 +196,11 @@ def prepare_progression_df(
     # Stop early if a quality was not recognized.
     if chord_type.isna().any():
         bad_rows = df.loc[chord_type.isna(), [3, 4]]
-        raise ValueError(
+        print(
             f"\nUnsupported chord qualities in {csv_file.name}:\n"
             f"{bad_rows.to_string()}"
         )
 
-    durations = df.apply(
-        lambda row: (
-            Fraction(str(row[1]).strip())
-            - Fraction(str(row[0]).strip())
-        ),
-        axis=1,
-    )
-
-    if (durations <= 0).any():
-        bad_rows = df.loc[durations <= 0, [0, 1, 3, 4]]
-        raise ValueError(
-            f"\nNonpositive chord durations in {csv_file.name}:\n"
-            f"{bad_rows.to_string()}"
-        )
 
     out = pd.DataFrame(
         {
