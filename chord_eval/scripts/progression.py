@@ -252,7 +252,7 @@ def get_progression(
 
             chords_vl_dist.append(
                 get_distance(
-                    distance="mechanical", # "voice leading" ? 
+                    distance="mechanical",
                     root1=df1.chord_root_midi[idx_df1 - 1],
                     root2=rdf2.chord_root_midi,
                     chord_type1=df1.chord_type[idx_df1 - 1],
@@ -315,7 +315,7 @@ def get_progression(
 
             chords_vl_dist.append(
                 get_distance(
-                    distance="mechanical", # "voice leading" ? 
+                    distance="mechanical",
                     root1=df1.chord_root_midi[idx_df1],
                     root2=rdf2.chord_root_midi,
                     chord_type1=df1.chord_type[idx_df1],
