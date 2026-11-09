@@ -19,8 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent / "chord_eval"
 
 
 ORIGINAL_DIR = BASE_DIR / "originals" # csv representation of original score
-AUTOMATIC_DIR = BASE_DIR / "ft_ccm6_csm3_ksm2_ktm0" # model outputs to compare originals with
-OUTPUT_DIR = BASE_DIR / "progression_distances"
+AUTOMATIC_DIR = BASE_DIR / "predictions" / "beat-best" # model outputs to compare originals with
+OUTPUT_DIR = BASE_DIR / "results" / f"dist-{AUTOMATIC_DIR.name}"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -182,7 +182,7 @@ def prepare_progression_df(
 
     # map roman numerals 
     root_midi = df[3].str.strip().map(ROMAN_TO_SEMITONE)
-    
+
     chord_type = df[4].str.strip().map(QUALITY_TO_CHORDTYPE)
 
     # Stop early if a root was not recognized.
