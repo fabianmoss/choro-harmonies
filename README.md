@@ -21,8 +21,8 @@
             removed_chords/
             keys_choro_pieces.csv
 
-        h5_data
-        h5_ksm
+        h5_data/
+        h5_ksm/
 
     models
         ft (checkpoints/...)
@@ -56,7 +56,7 @@
         results/ (currently in chord_eval/results)
 
     misc
-        flowcharts
+        flowcharts/
         ...
 
 
