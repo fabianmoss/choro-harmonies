@@ -55,6 +55,9 @@
         predictions/ (currently in chord_eval/predictions)
         results/ (currently in chord_eval/results)
 
+    misc
+        flowcharts
+        ...
 
 
 ---
