@@ -1,59 +1,59 @@
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/fabianmoss/choro-harmonies)
 
-Proposed repo structure:
+### Proposed repo structure:
 
-scripts
-    create_h5_data.py
-    train.py
-    annotate.py
-    write_to_musicxml.py
-    csv_from_xml.ipynb
-    remove_existing_chords.ipynb
-    chord-eval-script.py
-    imported chord_eval scripts (Currently in chord_eval/scripts)
-    + ...
+    scripts
+        create_h5_data.py
+        train.py
+        annotate.py
+        write_to_musicxml.py
+        csv_from_xml.ipynb
+        remove_existing_chords.ipynb
+        chord-eval-script.py
+        imported chord_eval scripts (Currently in chord_eval/scripts)
+        + ...
 
-data
-    choro_corpus
-        contains_chords/
-        contains_chords_csv/ (currently in chord_eval/originals)
-        no_chords/ 
-        removed_chords/
-        keys_choro_pieces.csv
+    data
+        choro_corpus
+            contains_chords/
+            contains_chords_csv/ (currently in chord_eval/originals)
+            no_chords/ 
+            removed_chords/
+            keys_choro_pieces.csv
 
-    h5_data
-    h5_ksm
+        h5_data
+        h5_ksm
 
-models
-    ft (checkpoints/...)
-        ccm/...
-        csm/...
-        ctm/...
-        ksm/...
-        ktm/...
+    models
+        ft (checkpoints/...)
+            ccm/...
+            csm/...
+            ctm/...
+            ksm/...
+            ktm/...
 
-    non-ft (checkpoints-beat-best/...)
-        ccm/...
-        csm/...
-        ...
-
-
-outputs
-    inference
-        subdirs containing annotate.py output tsvs for the used models
-        e.g. non-ft-no-cpm (currently outputs/...)
-
-    playground (model xml outputs) (currently playground/)
-
-    playground_csv (model xml mapped to csv outputs, needed for eval script) (currently choro_model_ft/...)
+        non-ft (checkpoints-beat-best/...)
+            ccm/...
+            csm/...
+            ...
 
 
+    outputs
+        inference
+            subdirs containing annotate.py output tsvs for the used models
+            e.g. non-ft-no-cpm (currently outputs/...)
+
+        playground (model xml outputs) (currently playground/)
+
+        playground_csv (model xml mapped to csv outputs, needed for eval script) (currently choro_model_ft/...)
 
 
-eval
-    originals/ (currently in chord_eval/originals)
-    predictions/ (currently in chord_eval/predictions)
-    results/ (currently in chord_eval/results)
+
+
+    eval
+        originals/ (currently in chord_eval/originals)
+        predictions/ (currently in chord_eval/predictions)
+        results/ (currently in chord_eval/results)
 
 
 
