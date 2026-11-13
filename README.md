@@ -60,6 +60,9 @@
         ...
 
 
+Unclear:
+- where to put fundamental inference scripts (note.py, piece.py, etc.)
+
 ---
 
 ### h5_data seeds
