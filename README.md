@@ -91,6 +91,7 @@ training splits default (80%train,10%val,10%test)
 - *version_0 batches = (8,64,64), lr = 0.001, patience=20epochs (98.0%)*
 - version_1 batches = (4,32,32), lr = 0.001, patience=20epochs (97.9%)
 
+
 ### CSM
 - version_0 batches = (32,64,256), lr = 0.001, patience=20epochs (23.6%)
 - version_1 batches = (16,32,128), lr = 0.001, patience=20epochs (23.6%)
@@ -107,3 +108,22 @@ training splits default (80%train,10%val,10%test)
 
 ### KTM
 - *version_0 batches = (32,64,256), lr = 0.001, patience=20epochs (96.5%)*
+
+---
+
+## seed1 19.11.26
+26 pieces, created for retraining CCM and CTM
+### CCM
+
+**version7 onwards: fixed note mapping bug in train.py**
+- version_7 batches = (128,256, 512) lr= 0.001, patience=20epochs (16.6%)
+- version_8 batches = (16,32,64) lr= 0.001, patience=20epochs
+
+### CTM
+
+version2 onwards: fixed note mapping bug in train.py
+- version_2 batches = (8,64,64), lr = 0.001, patience=20epochs (95.85%)
+
+# Runs
+
+ft1 = {ccm7,ctm2,csm3,ksm2,ktm0,no-cpm}
