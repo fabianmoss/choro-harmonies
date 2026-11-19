@@ -188,9 +188,6 @@ def annotate(
             logging.info("Returned None")
 
         else:
-            if logging.getLogger().isEnabledFor(logging.DEBUG):
-                eu.log_state(state, piece, model.CHORD_OUTPUT_TYPE, model.KEY_OUTPUT_TYPE)
-
             annotation_df = eu.get_annotation_df(
                 estimated_piece,
                 piece,
@@ -201,6 +198,12 @@ def annotate(
                 use_chord_pitches=True,
                 label_type=label_type,
             )
+
+            if logging.getLogger().isEnabledFor(logging.DEBUG):
+                if piece.get_chords() is not None:
+                    eu.log_state(state, piece, model.CHORD_OUTPUT_TYPE, model.KEY_OUTPUT_TYPE)
+                else:
+                    logging.debug("\n%s", annotation_df.to_string())
 
             if piece.name is not None and output_tsv_dir is not None:
                 # Removes the ID and first space from piece.name, and stems remaining path
