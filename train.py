@@ -408,7 +408,7 @@ if __name__ == "__main__":
 
     early_stopping_callback = EarlyStopping(
         monitor="val_loss",
-        patience=20, # number of epochs to wait before stopping
+        patience=20,
     )
 
     lr_logger = LearningRateMonitor()
