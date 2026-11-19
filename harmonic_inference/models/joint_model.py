@@ -2169,7 +2169,7 @@ class DebugLogger:
             else:
                 correct_rank = self.max_chords_to_print
 
-            state_prev_chords_one_hots, _ = state.get_chords()
+            state_prev_chords_one_hots, _, _ = state.get_chords()
             state_prev_chords_one_hots = state_prev_chords_one_hots[-6:-1]
             logging.debug("State key: %s", self.key_labels[state.key])
             logging.debug(

@@ -1574,7 +1574,7 @@ def log_state(state: State, piece: Piece, root_type: PitchType, tonic_type: Pitc
         relative=False, use_inversion=True, pad=False
     )
 
-    chords, changes = state.get_chords()
+    chords, changes, _ = state.get_chords()
     est_chord_labels = np.zeros(len(piece.get_inputs()), dtype=int)
     for chord, start, end in zip(chords, changes[:-1], changes[1:]):
         est_chord_labels[start:end] = chord

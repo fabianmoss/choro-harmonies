@@ -1181,6 +1181,12 @@ def get_notes_from_music_xml(
         measure_mc = measures_df.loc[measures_df["mn"] == measure.measureNumber, "mc"].iloc[0]
 
         for note in measure.recurse().notes:
+
+            # skip chord symbol elements so that they arent parsed as 0-duration notes
+
+            if isinstance(note, music21.harmony.Harmony):
+                continue
+            
             if note.isChord:
                 chord = note
                 for chord_note in chord.notes:
