@@ -113,6 +113,41 @@ training splits default (80%train,10%val,10%test)
 
 ## seed1 19.11.26
 26 pieces, created for retraining CCM and CTM
+
+### Splits
+
+=== TRAIN (21 pieces) ===
+  [ 2] score_11265-Por_um_beijo_Terna_saudade-Anacleto_de_Medeiros.xml
+  [20] score_4990-Menino_de_Ouro-Ernesto_Nazareth.xml
+  [14] score_280-Roceira-Mario_Alvares.xml
+  [17] score_4566-Isto_nao_e_vida-Macarico.xml
+  [ 5] score_1235-Valsa-Joaquim_Callado.xml
+  [11] score_1985-Tira_Poeira-Satyro_Bilhar.xml
+  [22] score_5602-Flor_do_Abacate-Alvaro_Sandim.xml
+  [13] score_265-Paixao_encoberta-Mario_Alvares.xml
+  [18] score_4637-Desmantelando_Relogios-Cicero_Telles_de_Meneses.xml
+  [19] score_4800-Atlantico-Ernesto_Nazareth.xml
+  [16] score_3791-Plangente-Chiquinha_Gonzaga.xml
+  [ 1] score_11143-Gemea-Chiquinha_Gonzaga.xml
+  [10] score_1932-Ondina-Eurico_Batista.xml
+  [25] score_846-Conceicao-Joaquim_Callado.xml
+  [24] score_6879-Tema_de_apresentacao_da_V_Sinfonia-Beethoven.xml
+  [ 8] score_1425-Terna_Saudade-Anacleto_de_Medeiros.xml
+  [ 6] score_1324-Em_ti_Pensando-Anacleto_de_Medeiros.xml
+  [ 4] score_12248-Gloria-Bonfiglio_de_Oliveira.xml
+  [ 9] score_192-Qualquer_coisa-Irineu_de_Almeida.xml
+  [ 7] score_1361-Medrosa-Anacleto_de_Medeiros.xml
+  [23] score_5789-Tristeza-Eduardo_Souto.xml
+
+=== VALID (2 pieces) ===
+  [ 3] score_117-Bohemia_Terra-Irineu_de_Almeida.xml
+  [ 0] score_10805-Meu_sabia-Raul_Silva.xml
+
+=== TEST (3 pieces) ===
+  [21] score_5063-Pinguim-Ernesto_Nazareth.xml
+  [15] score_2802-Belezas_do_Recife-Misael_Domingues.xml
+  [12] score_2622-Tu_passaste_por_este_Jardim-Alfredo_Dutra.xml
+
 ### CCM
 
 **version7 onwards: fixed note mapping bug in train.py**
