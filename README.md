@@ -111,7 +111,7 @@ training splits default (80%train,10%val,10%test)
 
 ---
 
-## seed1 19.11.26
+## seed0 updated 19.11.26
 26 pieces, created for retraining CCM and CTM
 
 ### Splits
@@ -130,8 +130,9 @@ training splits default (80%train,10%val,10%test)
 ### CCM
 
 **version7 onwards: fixed note mapping bug in train.py**
-- version_7 batches = (128,256, 512) lr= 0.001, patience=20epochs (16.6%)
-- version_8 batches = (16,32,64) lr= 0.001, patience=20epochs
+- version_7 batches = (128,256, 512) lr= 0.001, patience=20epochs (14.2%)
+- version_8 batches = (16,32,64) lr= 0.001, patience=20epochs (14.2%)
+- version_9 batches = (16,32,64) lr= 0.0005, patience=20epochs (21.3%)
 
 ### CTM
 
@@ -141,3 +142,4 @@ version2 onwards: fixed note mapping bug in train.py
 # Runs
 
 ft1 = {ccm7,ctm2,csm3,ksm2,ktm0,no-cpm}
+ft2 = {ccm9,ctm2,csm3,ksm2,ktm0,no-cpm}
