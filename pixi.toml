@@ -39,6 +39,7 @@ fluidsynth = "*"
 portaudio = "*"
 ipykernel = "*"
 pip = "*"
+networkx = ">=3.4.2,<4"
 
 [feature.eval.pypi-dependencies]
 librosa = "*"
