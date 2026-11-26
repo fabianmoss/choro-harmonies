@@ -1,0 +1,60 @@
+[workspace]
+authors = ["Jason Ackermann <k5cqrybys7@privaterelay.appleid.com>"]
+channels = ['conda-forge']
+name = "harmony"
+platforms = ['osx-arm64']
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+numpy = "<2"
+ipykernel = "*"
+tensorboard = "*"
+pip = "*"
+setuptools = "<81"
+
+
+
+[pypi-dependencies]
+torch = "==2.0.1"
+torchvision = "==0.15.2"
+torchaudio = "==2.0.2"
+pytorch-lightning = "==1.9.5"
+aiohttp = "*"
+h5py = "*"
+matplotlib = "*"
+ms3 = "==2.6.0"
+music21 = "==6.7.1"
+pyarrow = "*"
+pypdf = "*"
+visidata = "*"
+
+
+# --- Second environment: harmony-chord-eval ---
+[feature.eval.dependencies]
+python = "3.10.*"
+fluidsynth = "*"
+portaudio = "*"
+ipykernel = "*"
+pip = "*"
+
+[feature.eval.pypi-dependencies]
+librosa = "*"
+pretty-midi = "*"
+pyfluidsynth = "*"
+mido = "*"
+soundfile = "*"
+scikit-learn = "*"
+scipy = "*"
+pandas = "*"
+seaborn = "*"
+matplotlib = "*"
+h5py = "*"
+pytest = "*"
+numpy = ">=2"
+
+[environments]
+default = { solve-group = "default" }
+eval = { features = ["eval"], no-default-feature = true }

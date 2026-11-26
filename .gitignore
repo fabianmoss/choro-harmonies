@@ -25,3 +25,6 @@ results*/**
 chord-features_data/**
 .DS_Store
 # playground*/**
+# pixi environments
+.pixi/*
+!.pixi/config.toml
